@@ -11,3 +11,4 @@ int main(){
         printf("É primo");
     }
 } 
+//testando
