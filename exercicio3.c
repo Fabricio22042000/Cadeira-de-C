@@ -10,4 +10,4 @@ int main(){
     }else{
         printf("É primo");
     }
-}
+} 
