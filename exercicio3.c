@@ -3,12 +3,17 @@
 
 int main(){
     int num;
+    int cont = 0;
     printf("Digite um numero maior que 0: ");    
     scanf("%d", &num);
-    if(!(num%2 != 0) || !(num%3 != 0)){
-        printf("Não é primo");
-    }else{
-        printf("É primo");
+    for(int i = 1;i<=num;i++){
+        if(num%i == 0){
+            cont +=  1;
+        }
     }
-} 
-//testando
+    if(cont == 2){
+        printf("Ele é primo!");
+    }else{
+        printf("Ele não é primo!");
+    }
+}
