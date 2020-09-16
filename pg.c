@@ -6,7 +6,7 @@ int main(){
     int result = 0;
     printf("Diga a quantidade de elementos da PG: ");
     scanf("%d", &qnt);
-    printf("Diga a razao da PG:1 ");
+    printf("Diga a razao da PG: ");
     scanf("%d", &razao);
 
     int lista[qnt];
