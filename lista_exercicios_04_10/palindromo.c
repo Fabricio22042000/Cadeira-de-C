@@ -29,8 +29,9 @@ int main(){
     }
     for(int i=0; i <= strlen(nome); i++){
         if(nome[i] == ' ') {
-            for(int j=i;j<=strlen(nome);j++)
+            for(int j=i;j<=strlen(nome);j++){
                 nome[j] = nome[j+1];
+            }
         }
     }
     puts(nome);
