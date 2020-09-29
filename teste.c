@@ -20,14 +20,12 @@ int main(){
     // printf("%d", *lista);
     
     //strcpy(), strcat(), strlen();
-    char *nome1 = "Oi mundo";
-    char *nome2 = "Ola mundo";
-    if (strcmp(nome1, nome2) == 0){
-        printf("Igual");
-    }else{
-        printf("Diferente");
-    }
-    
-
+    char frase[100];
+    int i = 0;
+    printf("Digite uma frase: ");
+    gets(frase);
+    int cont = 0;
+    for(i=0;frase[i] != '\0';i++);
+    printf("Voce digitou %d caracteres", i);
     return 0;
 }
