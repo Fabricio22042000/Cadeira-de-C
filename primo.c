@@ -1,19 +1,22 @@
-//exercicio numero primo
-#include <stdio.h>
-
-int main(){
-    int num;
-    int cont = 0;
-    printf("Digite um numero maior que 0: ");    
+#include<stdio.h>
+ 
+int main() {
+    int num, i, resultado = 0;
+    
+    printf("Digite um número: ");
     scanf("%d", &num);
-    for(int i = 1;i<=num;i++){
-        if(num%i == 0){
-            cont +=  1;
+    
+    for (i = 2; i <= num / 2; i++) {
+        if (num % i == 0) {
+        resultado++;
+        break;
         }
     }
-    if(cont == 2){
-        printf("Ele é primo!");
-    }else{
-        printf("Ele não é primo!");
-    }
+    
+    if (resultado == 0)
+        printf("%d é um número primo\n", num);
+    else
+        printf("%d não é um número primo\n", num);
+    
+    return 0;
 }

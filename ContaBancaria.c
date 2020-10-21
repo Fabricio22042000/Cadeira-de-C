@@ -63,7 +63,6 @@ int main(){
             break;
         }
 }
-    listarTudo();
     return 0;
 }
 
